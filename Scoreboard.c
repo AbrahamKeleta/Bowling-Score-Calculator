@@ -7,7 +7,6 @@ int extra_round(int frame);
 int is_spare(int first, int second);
 int is_strike(int input);
 int print_board();
-int update_score(int val1, int val2, int val3, int val4);
 // Initializing the 2D array for manipulating data 
 int board[10][4] = {
 							  {-1, -1, -1, -1},
@@ -147,10 +146,6 @@ int is_spare(int first, int second) {
 	return ((first + second) == 10) ? 1 : 0;
 }
 
-
-int update_score(int val1, int val2, int val3, int val4) {
-	return val1 + val2 + val3 + val4;
-}	
 
 int is_strike(int input) {
 	return (input == 10) ? 1 : 0;
