@@ -74,9 +74,7 @@ int main() {
 						print_board();
 						break;
 					} else {
-						if (j == 0) {	
-							NUM_COLS ++;
-						}
+						NUM_COLS ++;
 					}
 				}	
 
@@ -213,8 +211,6 @@ int print_board() {
 
 		if (i == 0) {		
 			printf("| FR  | R1  | R2  | R3  |score|\n");
-		} else if (board[i - 1][1] == 10) {
-			strcpy(str1, "X");
 		} else {
 			printf("| %3d | %3s | %3s | %3s | %3s |\n", 
 				i, str, str1, str2, str3);
