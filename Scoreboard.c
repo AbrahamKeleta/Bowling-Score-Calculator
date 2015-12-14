@@ -74,7 +74,9 @@ int main() {
 						print_board();
 						break;
 					} else {
-						NUM_COLS ++;
+						if (j < 1) {
+							NUM_COLS ++;
+						}
 					}
 				}	
 
