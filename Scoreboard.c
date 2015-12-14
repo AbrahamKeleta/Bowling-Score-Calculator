@@ -65,7 +65,7 @@ int main() {
 					boolean_strike --;
 				}
 
-				// Trake when  strike is made 
+				// Trake when  strike is made
 				if (is_strike(input)) {	
 					if (i != 9) {
 						boolean_strike += 1;
@@ -74,7 +74,9 @@ int main() {
 						print_board();
 						break;
 					} else {
-						NUM_COLS ++;
+						if (j == 0) {	
+							NUM_COLS ++;
+						}
 					}
 				}	
 
