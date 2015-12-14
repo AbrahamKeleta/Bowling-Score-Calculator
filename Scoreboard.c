@@ -41,7 +41,7 @@ int main() {
     int checker        = 0;
   	
   	printf("Welcome to BOWLING 101. Bowling Score Calculator.\n");
-  	printf("Enter each turn below:\n");
+  	printf("Enter the # of knocked pins below: (don't use non-integer characters!)\n");
 	for (int i = 0; i < NUM_ROWS; i ++) {
 		for (int j = 0; j < NUM_COLS; j ++) {
 			
@@ -110,7 +110,7 @@ int main() {
 			} else {
 
 				// Tell user when trying to enter invalid value. 
-				printf("Incorrect Input, try again.");
+				printf("Incorrect Input, try again.\n");
 				j--;
 			}
 		}		
